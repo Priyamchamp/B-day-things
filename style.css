@@ -13,6 +13,10 @@ body {
   background-color: #000;
 }
 
+.a1{
+  display: none;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -65,7 +69,8 @@ body {
 
 img {
   width: 100%;
-    margin: auto;
+  object-fit: cover;
+  margin: auto;
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
 
@@ -108,12 +113,6 @@ img {
 
 .bottom{
   z-index: 50;
-}
-
-.audio{
-  display: none;
-  height: 100px;
-  width: 100px;
 }
 
 
@@ -168,3 +167,4 @@ img {
   width: 100%; 
   left: 0;
 }
+
