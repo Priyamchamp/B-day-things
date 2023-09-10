@@ -1,102 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>Kamerin Birthday Cards</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport meta tag -->
+    <title>Kamerin Birthday Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <audio id="myAudio" style="display: none;">
-    <source src="stupid.mp3" type="audio/mpeg">
-  </audio>
-  hello
+    <!--Audio file-->
+    <audio id="myAudio" style="display: none;">
+        <source src="stupid.mp3" type="audio/mpeg">
+    </audio>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var audio = document.getElementById('myAudio');
-      var isAudioStarted = false;
-
-      function startAudio() {
-        if (!isAudioStarted) {
-          isAudioStarted = true;
-
-          // Check if the audio context is created by user interaction
-          if (window.AudioContext || window.webkitAudioContext) {
-            var context = new (window.AudioContext || window.webkitAudioContext)();
-            var source = context.createMediaElementSource(audio);
-            source.connect(context.destination);
-            audio.play();
-          } else {
-            // Fallback for browsers that don't support the Web Audio API
-            audio.play();
-          }
-        }
-      }
-
-      // Start audio on any user interaction (click, tap, etc.)
-      document.body.addEventListener('click', startAudio);
-    });
-  </script>
-  <!-- partial:index.partial.html -->
-  <div class="container">
-    <!-- card one hermit -->
-    <span class="text1">Happy Birthday</span>
-    <span class="text2">Kamerin</span>
-  </div>
-
-  <div class="tarot-card">
-    <img src="https://beebom.com/wp-content/uploads/2022/11/gojo-and-geto-friendship.jpg?w=750&quality=75" />
-  </div>
-
-  <div class="tarot-card">
-    <img src="https://w0.peakpx.com/wallpaper/43/891/HD-wallpaper-sukuna-yuji-itadori-jujutsu-kaisen.jpg" />
-  </div>
-
-  <div class="tarot-card">
-    <img
-      src="https://static.displate.com/857x1200/displate/2021-08-06/d3907a8b095730e28c194de9e8d5aa64_2511922fc9e3d5fc175fb8be2b8e9f70.jpg" />
-  </div>
-
-  <div class="tarot-card">
-    <img src="https://cdn.wallpapersafari.com/54/63/egSU6v.jpg" />
-  </div>
-
-  <!-- card two temperance -->
-  <div class="tarot-card shuffle">
-    <img
-      src="https://play-lh.googleusercontent.com/poY4lSYQ60exTBsZcWE01NvU6krckzzr4fdhZWlCG0dP74eVjDbrWhG1c9LK8heykQ=w526-h296-rw" />
-  </div>
-
-  <!-- card three hanged-man -->
-  <div class="tarot-card">
-    <img src="https://www.looper.com/img/gallery/is-jujutsu-kaisen-okay-for-kids-to-watch/intro-1624910062.jpg" />
-  </div>
-
-  <!-- card four hierophant -->
-  <div class="tarot-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiboH3dPumJpHoVb116VEo8jqsmHx_iKirLA" />
-  </div>
-
-  <!--   <h1>Click to Shuffle</h1> -->
-  </div>
-
-  <!-- made with love footer -->
+    <div class="container">
+        <div class="flex-item">
+            <!-- card one hermit -->
+            <span class="text1">Happy Birthday</span>
+            <span class="text2">Kamerin</span>
+        </div>
+    </div>
+    <div class="flex-item2">
+        <div class="tarot-card">
+            <img src="https://beebom.com/wp-content/uploads/2022/11/gojo-and-geto-friendship.jpg?w=750&quality=75" />
+        </div>
+        <div class="tarot-card">
+            <img src="https://w0.peakpx.com/wallpaper/43/891/HD-wallpaper-sukuna-yuji-itadori-jujutsu-kaisen.jpg" />
+        </div>
+        <div class="tarot-card">
+            <img
+                src="https://static.displate.com/857x1200/displate/2021-08-06/d3907a8b095730e28c194de9e8d5aa64_2511922fc9e3d5fc175fb8be2b8e9f70.jpg" />
+        </div>
+        <div class="tarot-card">
+            <img src="https://cdn.wallpapersafari.com/54/63/egSU6v.jpg" />
+        </div>
+        <div class="tarot-card">
+            <img
+                src="https://play-lh.googleusercontent.com/poY4lSYQ60exTBsZcWE01NvU6krckzzr4fdhZWlCG0dP74eVjDbrWhG1c9LK8heykQ=w526-h296-rw" />
+        </div>
+        <div class="tarot-card">
+            <img
+                src="https://www.looper.com/img/gallery/is-jujutsu-kaisen-okay-for-kids-to-watch/intro-1624910062.jpg" />
+        </div>
+        <div class="tarot-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiboH3dPumJpHoVb116VEo8jqsmHx_iKirLA" />
+        </div>
+    </div>
+    <div class="balloons">
+      <img src="C:\Users\ricos\OneDrive\Desktop\kamerin birthday\images\images (1).jpeg">
+      <img src="C:\Users\ricos\OneDrive\Desktop\kamerin birthday\images\images (2).jpeg">
+      <img src="C:\Users\ricos\OneDrive\Desktop\kamerin birthday\images\images (3).jpeg">
+      <img src="C:\Users\ricos\OneDrive\Desktop\kamerin birthday\images\images (4).jpeg">
+      <img src="C:\Users\ricos\OneDrive\Desktop\kamerin birthday\images\images (5).jpeg">
+      <img src="https://modhukor.com/it/images/6.png">
+      <img src="https://modhukor.com/it/images/7.png">
+      <img src="https://modhukor.com/it/images/8.png">
+      <img src="https://modhukor.com/it/images/9.png">
+      <img src="https://modhukor.com/it/images/10.png">
+      </div>
+    
+    <!-- made with love footer -->
   <div class="made-with-love">
     Made For The Person Who Is <i id="heart">🏀 Player</i>&<i id="coffee">💃 classical dancer</i> by
-    <a href="https://github.com/develooperrahulofficial">The Curly Boy Who Knew you from your childhood</a>
+    <a href="https://github.com/develooperrahulofficial">Rico</a>
   </div>
 
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
