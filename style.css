@@ -96,6 +96,15 @@ img {
     border-radius: 3px;
 }
 
+.yo{
+  width: 33%;
+  height: 40%;
+}
+.ko{
+  width:28%;
+  height: 54%;
+}
+
 .tarot-card:nth-child(1) {
     transform: rotate(0deg);
 }
