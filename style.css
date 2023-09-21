@@ -96,12 +96,17 @@ img {
     border-radius: 3px;
 }
 
+.yo{
+  width: 33%;
+  height: 40%;
+}
+
 .tarot-card:nth-child(1) {
     transform: rotate(0deg);
 }
 
 .tarot-card:nth-child(2) {
-    transform: rotate(20deg);
+    transform: rotate(-15deg);
 }
 
 .tarot-card:nth-child(3) {
