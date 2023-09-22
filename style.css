@@ -110,7 +110,7 @@ img {
 }
 
 .tarot-card:nth-child(2) {
-    transform: rotate(-15deg);
+    transform: rotate(20deg);
 }
 
 .tarot-card:nth-child(3) {
